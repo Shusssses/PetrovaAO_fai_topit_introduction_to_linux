@@ -1,0 +1,27 @@
+#!/bin/bash
+if [ "$#" -ne 2 ]; then
+    echo 'Ошибка: неверное кол-во аргументов'
+    exit 1
+fi
+
+if [ "$EUID" -ne 0 ]; then
+    echo "Ошибка: недостаточно прав"
+    exit 1
+fi
+
+num=$1
+st=$2
+fin=$((st + num -1))
+
+for i in $(seq $st $fin); do   #seq генерирует последовательность от st до fin
+    name="u$i"
+    password="DerParol$i"
+
+    if id "$name" &>/dev/null; then
+        echo "пользователь $name уже сущеcтсвует"
+    else
+        useradd -m "$name"
+        echo "$name:$password" | chpasswd
+        echo "Успешно создан: $name (пароль: $password)"
+    fi
+done

@@ -1,0 +1,143 @@
+===========ДИАГНОСТИЧЕСКИЙ ОТЧЕТ О СИСТЕМЕ (v3) ===============
+
+=== Информация о хосте ===
+Дата формирования: Чт 26 ноя 2026 00:26:07 MSK
+Имя хоста: debian-pc
+
+=== Информация о пользователях ===
+Пользователь, запустивший скрипт: root
+Залогиненные пользователи: aop-1    sshd         2026-11-25 21:08 (10.0.2.2)
+aop-1    seat0        2026-11-25 20:49
+aop-1    tty1         2026-11-25 20:49
+
+=== Информация о текущем каталоге ===
+Текущий каталог: /home/aop-1/PASSPORT
+Содержимое каталога: итого 28
+drwxrwxr-x  3 aop-1 aop-1 4096 ноя 26 00:09 .
+drwx------ 10 aop-1 aop-1 4096 ноя 25 21:08 ..
+-rw-rw-r--  1 root  root  7992 ноя 26 00:23 inventory.txt
+drwxrwxr-x  4 root  root  4096 ноя 25 23:49 PASSPORT
+-rwxrwxr-x  1 aop-1 aop-1 7595 ноя 26 00:25 script_passport_v3.sh
+
+=== Информация о ядре и системе ===
+Версия ядра: Linux debian-pc 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+Разрядность системы: x86_64
+
+=== Версия ОС ===
+PRETTY_NAME=Debian GNU/Linux 13 (trixie)
+NAME=Debian GNU/Linux
+VERSION=13 (trixie)
+
+=== Информация о процессоре ===
+Модель процессора: 12th Gen Intel(R) Core(TM) i5-12450H
+Частота CPU (MHz): 
+Количество логических ядер: 2
+
+=== Кэш процессора ===
+L1d cache:                               64 KiB (2 instances)
+L1i cache:                               128 KiB (2 instances)
+L2 cache:                                4 MiB (2 instances)
+L3 cache:                                24 MiB (2 instances)
+
+=== Оперативная память ===
+Memory block size:                128M
+Total online memory:                2G
+
+=== Материнская плата ===
+	Manufacturer: Oracle Corporation
+	Product Name: VirtualBox
+	Version: 1.2
+	Serial Number: 0
+
+=== BIOS ===
+	Vendor: innotek GmbH
+	Version: VirtualBox
+	Release Date: 12/01/2006
+
+=== Устройства PCI ===
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:01.1 IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
+00:05.0 Multimedia audio controller: Intel Corporation 82801AA AC'97 Audio Controller (rev 01)
+00:06.0 USB controller: Apple Inc. KeyLargo/Intrepid USB
+00:07.0 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:0b.0 USB controller: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller
+00:0d.0 SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+
+=========================================================
+=== Пользователи (root и обычные, UID >= 1000) ===
+Пользователь: root (UID: 0)
+  Группы: root
+  Последний вход: root             pts/3                                               Thu Nov 26 00:16:14 +0300 2026
+  Последняя смена пароля: Sep 28, 2026
+-----------------------------------
+Пользователь: shustrik (UID: 1000)
+  Группы: shustrik cdrom floppy audio dip video plugdev users netdev bluetooth
+  Последний вход: shustrik                                                             **Never logged in**
+  Последняя смена пароля: Sep 28, 2026
+-----------------------------------
+Пользователь: aop-1 (UID: 1001)
+  Группы: aop-1 sudo users
+  Последний вход: aop-1            ssh      10.0.2.2                                   Wed Nov 25 21:08:12 +0300 2026
+  Последняя смена пароля: Nov 22, 2026
+-----------------------------------
+Пользователь: u1 (UID: 1002)
+  Группы: u1 project
+  Последний вход: u1                                                                   **Never logged in**
+  Последняя смена пароля: Nov 22, 2026
+-----------------------------------
+Пользователь: u2 (UID: 1003)
+  Группы: u2 project
+  Последний вход: u2                                                                   **Never logged in**
+  Последняя смена пароля: Nov 23, 2026
+-----------------------------------
+Пользователь: u3 (UID: 1004)
+  Группы: u3 project
+  Последний вход: u3                                                                   **Never logged in**
+  Последняя смена пароля: Nov 22, 2026
+-----------------------------------
+Пользователь: u4 (UID: 1005)
+  Группы: u4 readers
+  Последний вход: u4                                                                   **Never logged in**
+  Последняя смена пароля: Nov 22, 2026
+-----------------------------------
+Пользователь: u5 (UID: 1006)
+  Группы: u5 readers
+  Последний вход: u5                                                                   **Never logged in**
+  Последняя смена пароля: Nov 22, 2026
+-----------------------------------
+
+=== Параметры sshd (эффективные значения) ===
+port 22
+logingracetime 30
+maxauthtries 2
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no
+
+=== Топ-5 процессов по потреблению памяти (%MEM) ===
+    PID    PPID USER     %MEM CMD
+   2582    2458 aop-1     9.2 /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/node --dns-result-order=ipv4first /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+   2498    2458 aop-1     7.5 /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/node /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/out/bootstrap-fork --type=agentHost --logsPath /home/aop-1/.vscode-server/data/logs/20261125T210828 --user-data-dir /home/aop-1/.vscode-server/data --telemetry-level all
+   2458    2454 aop-1     6.3 /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/node /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-7f1cdc15-03ed-41f4-a3be-622f19f47e7b
+   2513    2458 aop-1     4.0 /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/node /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/out/bootstrap-fork --type=ptyHost --logsPath /home/aop-1/.vscode-server/data/logs/20261125T210828
+   2593    2458 aop-1     3.6 /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/node /home/aop-1/.vscode-server/cli/servers/Stable-661626d0e72f97806550790a98fb87116c9db825/server/out/bootstrap-fork --type=fileWatcher
+
+=== Подозрительные учётные записи ===
+Пользователи с UID 0 (кроме root):
+Пользователи с пустым паролем:
+
+=== Файлы с установленным битом SUID в /usr/bin и /usr/sbin ===
+/usr/bin/mount
+/usr/bin/su
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/passwd
+/usr/bin/umount
+/usr/bin/sudo
+/usr/bin/chfn
+
